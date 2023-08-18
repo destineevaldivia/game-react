@@ -22,9 +22,11 @@ function App() {
     <div className="output-container"> 
         <h2> Player's Choice: <span id = "player-choice"></span></h2>
         <h2> Computer's Choice: <span id="computer-choice"></span></h2>
-        <h2> Who won? <span id = "result"></span></h2>
     </div>
 
+    <div className="result">
+      <h2> Who won? <span id = "result"></span></h2>
+    </div>
     </>
   )
 }

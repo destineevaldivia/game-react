@@ -1,1 +1,16 @@
-
+body {
+    text-align: center;
+}
+.choice-container {
+    margin: 80px;
+}
+.output-container {
+display: flex;
+flex-direction: column;
+margin: 10px;
+width: 200px;
+height: 200px
+}
+h2{
+background-color: rgba(200, 204, 248, 0.99);
+}

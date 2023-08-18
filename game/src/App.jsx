@@ -3,6 +3,9 @@ import "./App.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandBackFist, faHand, faHandScissors } from '@fortawesome/free-solid-svg-icons'
 
+
+
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,9 +22,15 @@ function App() {
         <button className="buttons" id="scissors-btn">Scissors <FontAwesomeIcon icon={faHandScissors} /></button>
     </div>
 
-    <div className="output-container"> 
-        <h2> Player's Choice: <span id = "player-choice"></span></h2>
-        <h2> Computer's Choice: <span id="computer-choice"></span></h2>
+    <div className="player-container"> 
+        <div className='player'>
+          <h2> Player's Choice: <span id = "player-choice"></span></h2>
+          <div></div>
+        </div>
+        <div className='player'>
+          <h2> Computer's Choice: <span id="computer-choice"></span></h2>
+          <div></div>
+        </div>
     </div>
 
     <div className="result">

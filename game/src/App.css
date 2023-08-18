@@ -4,12 +4,19 @@ body {
 .choice-container {
     margin: 20px;
 }
-.output-container {
+.player-container {
 display: flex;
-flex-direction: column;
+flex-direction: row;
 margin: 10px;
-width: 200px;
-height: 200px
+width: 800px;
+height: 250px
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 800px;
+    height: 120px;
 }
 h2{
 background-color: rgba(200, 204, 248, 0.99);

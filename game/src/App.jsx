@@ -2,6 +2,7 @@ import { useState } from 'react'
 import "./App.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandBackFist, faHand, faHandScissors } from '@fortawesome/free-solid-svg-icons'
+import Player from './components/Player';
 
 
 
@@ -23,14 +24,16 @@ function App() {
     </div>
 
     <div className="player-container"> 
-        <div className='player'>
-          <h2> Player's Choice: <span id = "player-choice"></span></h2>
-          <div></div>
-        </div>
-        <div className='player'>
-          <h2> Computer's Choice: <span id="computer-choice"></span></h2>
-          <div></div>
-        </div>
+        <Player name="Player" score={0}/>
+        <Player name="Computer" score={0}/>
+        {/* <div className='player'>
+          <h2 className='score'> Player's score: <span id = "player-score"></span></h2>
+          <div className='action'></div>
+        </div> */}
+        {/* <div className='player'>
+          <h2 className='score'> Computer's score: <span id="computer-score"></span></h2>
+          <div className='action'></div>
+        </div> */}
     </div>
 
     <div className="result">

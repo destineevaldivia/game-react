@@ -2,8 +2,8 @@
 
 function Player (props) {
     return (
-        <div>
-
+        <div className='player'> 
+            <h2 className='score'> {props.name} Score: {props.score}</h2>
         </div>
     )
 }

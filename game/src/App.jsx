@@ -1,20 +1,26 @@
-import { useState } from 'react'
+import { react } from 'react';
+
+// import { useState } from 'react'
 import "./App.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandBackFist, faHand, faHandScissors } from '@fortawesome/free-solid-svg-icons'
-import Player from './components/Player';
+import { Choice } from './components/Choice';
+// import Player from './components/Player';
+// import ActionIcon from './Choice';
 
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div>
     <div className ="body">
       <h1> Rock Paper Scissors Game </h1>
     </div>
+
+<Choice />
 
     <div className="choice-container">
         <h2>Choose:</h2>
@@ -26,20 +32,12 @@ function App() {
     <div className="player-container"> 
         <Player name="Player" score={0}/>
         <Player name="Computer" score={0}/>
-        {/* <div className='player'>
-          <h2 className='score'> Player's score: <span id = "player-score"></span></h2>
-          <div className='action'></div>
-        </div> */}
-        {/* <div className='player'>
-          <h2 className='score'> Computer's score: <span id="computer-score"></span></h2>
-          <div className='action'></div>
-        </div> */}
     </div>
 
     <div className="result">
       <h2> Who won? <span id = "result"></span></h2>
     </div>
-    </>
+    </div>
   )
 }
 

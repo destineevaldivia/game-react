@@ -1,11 +1,11 @@
+// function Player (props) {
+//     return (
+//         <div className='player'> 
+//                 <h2 className='score'> {props.name} Score: {props.score} {props.action}</h2>  
+//         </div>
 
+//     )
 
-function Player (props) {
-    return (
-        <div className='player'> 
-            <h2 className='score'> {props.name} Score: {props.score}</h2>
-        </div>
-    )
-}
+// }
 
-export default Player;
+// export default Player;
